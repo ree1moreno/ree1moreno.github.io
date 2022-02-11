@@ -208,6 +208,7 @@ img {
   grid-column: 2;
   grid-row: 1;
   margin: 0;
+  position: relative;
   text-align: center;
 }
 
@@ -227,23 +228,23 @@ img {
   padding: 6px 12px;
 }
 
-.projeto-habilidades::after {
-  animation: arrow 1.2s infinite both;
-  content: '🠛';
+.projeto-item h5::after {
+  animation: arrow 1.2s infinite;
+  content: '➩';
   display: block;
-  width: 20px;
   position: absolute;
-  top: -92px;
-  right: 4px;
+  right: 12px;
+  top: 0;
+  width: 20px;
   z-index: 3;
 }
 
 @keyframes arrow {
   from {
-    transform: translate(0, 0);
+    transform: translateX(0);
   }
   to {
-    transform: translate(0, 16px);
+    transform: translateX(14px);
   }
 }
 
@@ -475,9 +476,8 @@ img {
     width: 100px;
   }
 
-  .projeto-habilidades::after {
-    top: -54px;
-    right: -4px;
+  .projeto-item h5::after {
+    right: 0px;
   }
 
   .swiper {
@@ -523,9 +523,8 @@ img {
     font-size: 1rem;
   }
 
-  .projeto-habilidades::after {
-    top: -52px;
-    right: -8px;
+  .projeto-item h5::after {
+    right: 2px;
   }
 
   /* .introducao img {
@@ -603,9 +602,8 @@ img {
     grid-template-columns: 1fr;
   }
 
-  .projeto-habilidades::after {
-    top: -50px;
-    right: -12px;
+  .projeto-item h5::after {
+    right: 6px;
   }
 
   .swiper {
