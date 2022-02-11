@@ -155,7 +155,9 @@ img {
 .projeto-item {
   align-items: center;
   background-color: rgba(245, 245, 245, 0.507);
+  box-shadow: 1px 1px 6px #88888849;
   border-radius: 4px;
+  cursor: grab;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 15px;
@@ -198,6 +200,7 @@ img {
   gap: 10px;
   justify-content: center;
   margin: 20px 0;
+  position: relative;
 }
 
 .projeto-habilidades li {
@@ -205,6 +208,26 @@ img {
   border-radius: 4px;
   font-size: 0.875rem;
   padding: 6px 12px;
+}
+
+.projeto-habilidades::after {
+  animation: arrow 1.2s infinite both;
+  content: '🠛';
+  display: block;
+  width: 20px;
+  position: absolute;
+  top: -92px;
+  right: 4px;
+  z-index: 3;
+}
+
+@keyframes arrow {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(0, 16px);
+  }
 }
 
 .formacao {
@@ -444,6 +467,11 @@ img {
     width: 100px;
   }
 
+  .projeto-habilidades::after {
+    top: -54px;
+    right: -4px;
+  }
+
   .swiper {
     width: 400px;
     height: 150px;
@@ -485,6 +513,11 @@ img {
 
   .introducao p {
     font-size: 1rem;
+  }
+
+  .projeto-habilidades::after {
+    top: -52px;
+    right: -8px;
   }
 
   /* .introducao img {
@@ -560,6 +593,11 @@ img {
 
   .introducao {
     grid-template-columns: 1fr;
+  }
+
+  .projeto-habilidades::after {
+    top: -50px;
+    right: -12px;
   }
 
   .swiper {
