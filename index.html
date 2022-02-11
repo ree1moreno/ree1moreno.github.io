@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Desenvolvedor Front End localizado em Sao Paulo">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Portfólio Pessoal</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <a href="/"><img class="marca" src="img/marca.svg" alt="renato moreno"></a>
+    <nav class="js-menu">
+      <ul class="header-menu">
+        <li><a href="#experiencia">Experência</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="introducao-container">
+    <div class="introducao">
+      <img src="img/perfil.png" alt="foto de perfil" width="254" height="264">
+      <div>
+        <h1>Desenvolvedor Front End</h1>
+        <p class="apresentacao">Olá, me chamo Renato Moreno e atualmente estou em transição de carreira, saindo da área de finanças e entrando no mundo da tecnologia.</p>
+        <p>Localizado em São Paulo.</p>
+      </div>
+    </div>
+  </main>
+  <section id="experiencia" class="experiencia js-scroll" aria-label="experiência">
+    <h2 class="subtitulo">Experiência</h2>
+    <div>
+      <p class="experiencia-texto">
+        Começando a desenvolver pequenos projetos durante o curso da <strong>Trybe</strong>. Com o uso de <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> e <strong>React</strong>.
+      </p>
+      <div class="projetos">
+        <h3>Projetos</h3>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="projeto-item swiper-slide">
+              <h4>Projeto 1</h4>
+              <p class="projeto-texto">Explicação do que é o projeto e o que foi aprendido.</p>
+              <h5>Tecnologias</h5>
+              <ul class="projeto-habilidades">
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+            <div class="projeto-item swiper-slide">
+              <h4>Projeto 2</h4>
+              <p class="projeto-texto">Explicação do que é o projeto e o que foi aprendido.</p>
+              <h5>Tecnologias</h5>
+              <ul class="projeto-habilidades">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <div class="projeto-item swiper-slide">
+              <h4>Projeto 3</h4>
+              <p class="projeto-texto">Explicação do que é o projeto e o que foi aprendido.</p>
+              <h5>Tecnologias</h5>
+              <ul class="projeto-habilidades">
+                <li>ReactJS</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+            <div class="projeto-item swiper-slide">
+              <h4>Projeto 4</h4>
+              <p class="projeto-texto">Explicação do que é o projeto e o que foi aprendido.</p>
+              <h5>Tecnologias</h5>
+              <ul class="projeto-habilidades">
+                <li>ReactJS</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="formacao" class="formacao js-scroll" aria-label="formação">
+    <div class="formacao-container">
+      <h2 class="subtitulo">Formação</h2>
+      <div>
+        <p class="formacao-texto">
+          Minha mais recente experiência acadêmica é o curso de <strong>Desenvolvimento Web</strong> da Trybe e me mantenho sempre buscando outras fontes de informação para <strong>aprimorar</strong> os conhecimentos.
+        </p>
+        <ul class="faculdade-lista">
+          <li class="faculdade">
+            <span class="faculdade-tipo">Bacharel</span>
+            <h3 class="faculdade-curso">Administração de Empresas</h3>
+            <span class="faculdade-instituicao">PUC-SP</span>
+          </li>
+          <li class="faculdade">
+            <span class="faculdade-tipo">Bacharel</span>
+            <h3 class="faculdade-curso">Ciências Contábeis</h3>
+            <span class="faculdade-instituicao">Mackenzie</span>
+          </li>
+          <li class="faculdade">
+            <span class="faculdade-tipo">Curso</span>
+            <h3 class="faculdade-curso">Desenvolvimento Web</h3>
+            <span class="faculdade-instituicao">Trybe</span>
+          </li>
+        </ul>
+        <div class="formacao-extra">
+          <div class="cursos">
+            <h3>Cursos Intensivos</h3>
+            <ul>
+              <li>UI Design para iniciantes <span>17h</span></li>
+              <li>HTML e CSS para iniciantes <span>23h</span></li>
+            </ul>
+          </div>
+          <div class="idiomas">
+            <h3>Idiomas</h3>
+            <ul>
+              <li>Inglês <span>Avançado</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="contato" class="footer">
+    <div class="footer-container">
+      <p class="footer-texto">Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa.</p>
+      <ul class="footer-contato">
+        <li>renats.mc@gmail.com</li>
+        <li>+55 11 96409-0900</li>
+        <ul class="social">
+          <li class="icon"><a href="https://www.linkedin.com/in/reemoreno/" target="_blank" rel="noreferrer"><img src="img/linkedin.svg" alt="linkedin icon"></a>
+          </li>
+          <li class="icon"><a href="https://github.com/ree1moreno" target="_blank" rel="noreferrer"><img src="img/github.svg" alt="github icon"></a></li>
+        </ul>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
