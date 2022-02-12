@@ -11,3 +11,4 @@ Repositório criado para hospedar a minha página de portfólio profissional que
 - Estilo em CSS
 - Pequenas funções em JavaScript
 - Framework <a href="https://swiperjs.com/get-started" target="_blank"> Swiper </a>
+- Framework <a href="https://animate.style/" target="_blank"> Animate </a>
