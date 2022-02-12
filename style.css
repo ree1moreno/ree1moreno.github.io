@@ -135,7 +135,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 100px;
-  height: 80vh;
+  height: 100vh;
   margin: 0 auto;
   max-width: 1200px;
   padding: 20px;
@@ -187,6 +187,13 @@ img {
   position: relative;
 }
 
+.projeto-item.poke-bg {
+  background-image: url(img/pokedex_art.png);
+  background-repeat: no-repeat;
+  background-position: center -0.2rem;
+  background-size: 12%;
+}
+
 .projeto-item::before {
   content: '';
   display: block;
@@ -200,7 +207,7 @@ img {
 
 .projeto-item p {
   grid-column: 1;
-  margin: 20px 0;
+  margin: 0 0 20px;
 }
 
 .projeto-item h4 {
@@ -217,6 +224,19 @@ img {
   text-align: center;
 }
 
+.poke-container a {
+  color: #021579;
+  font-weight: 500;
+}
+
+.projeto-item a:hover {
+  font-weight: 700;
+}
+
+.projeto-item div:nth-child(4) {
+  justify-self: center;
+}
+
 .projeto-habilidades {
   display: flex;
   flex-wrap: wrap;
@@ -230,6 +250,7 @@ img {
   background-color: #dce9fc;
   border-radius: 4px;
   font-size: 0.875rem;
+  font-weight: 500;
   padding: 6px 12px;
 }
 
@@ -490,6 +511,20 @@ img {
     right: 0px;
   }
 
+  .projeto-item p {
+    font-size: 0.9rem;
+    margin: 10px 0;
+  }
+
+  .projeto-item a {
+    font-size: 0.9rem;
+  }
+
+  .projeto-item.poke-bg {
+    background-position: center -0.1rem;
+    background-size: 10%;
+  }
+
   .swiper {
     width: 400px;
     height: 150px;
@@ -536,6 +571,11 @@ img {
 
   .projeto-item h5::after {
     right: 2px;
+  }
+
+  .projeto-item.poke-bg {
+    background-position: center -0.2rem;
+    background-size: 10%;
   }
 
   /* .introducao img {
@@ -617,8 +657,12 @@ img {
     right: 6px;
   }
 
+  .projeto-item.poke-bg {
+    background-image: none;
+  }
+
   .swiper {
     width: 360px;
-    height: 150px;
+    height: 180px;
   }
 }
