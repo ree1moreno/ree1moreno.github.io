@@ -537,6 +537,10 @@ img {
     padding: 0.3rem 0;
   }
 
+  .formacao-container {
+    margin-top: 3rem;
+  }
+
   .swiper {
     width: 400px;
     height: 150px;
@@ -613,7 +617,7 @@ img {
   .formacao-container {
     gap: 40px;
     grid-template-columns: 1fr;
-    padding: 60px 20px;
+    padding: 30px 20px;
   }
 
   .formacao .subtitulo {
@@ -674,7 +678,18 @@ img {
   }
 
   .swiper {
-    width: 360px;
+    width: 340px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 380px) {
+  .experiencia-texto {
+    font-size: 1.2rem;
+  }
+
+  .swiper {
+    width: 320px;
     height: 180px;
   }
 }
