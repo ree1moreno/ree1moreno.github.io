@@ -233,7 +233,7 @@ img {
   color: #021579;
   display: inline-block;
   font-weight: 500;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 0;
 }
 
 .projeto-item a:hover {
@@ -530,6 +530,11 @@ img {
   .projeto-item.poke-bg {
     background-position: center -0.1rem;
     background-size: 10%;
+  }
+
+  .poke-container a {
+    justify-self: start;
+    padding: 0.3rem 0;
   }
 
   .swiper {
