@@ -26,8 +26,13 @@ img {
 }
 
 .marca {
+  animation: fadeInLeft ease 0.9s;
   height: 40px;
   width: 300px;
+}
+
+.js-menu {
+  animation: fadeInRight ease 0.9s;
 }
 
 .header-menu {
@@ -60,7 +65,7 @@ img {
 }
 
 .introducao-container {
-  animation: bounceIn 0.8s;
+  animation: bounceIn 1.2s;
   background-color: #f0f0f0;
   border-radius: 4px;
   display: flex;
