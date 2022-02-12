@@ -231,7 +231,9 @@ img {
 
 .poke-container a {
   color: #021579;
+  display: inline-block;
   font-weight: 500;
+  padding: 0.5rem 1rem;
 }
 
 .projeto-item a:hover {
